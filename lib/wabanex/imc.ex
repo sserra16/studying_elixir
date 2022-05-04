@@ -15,7 +15,7 @@ defmodule Wabanex.IMC do
       {:ok, data}
   end
 
-  defp handle_file({:error, reason}) do
+  defp handle_file({:error, _reason}) do
     {:error, "Error while opening the file"}
   end
 
